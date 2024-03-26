@@ -15,27 +15,27 @@ function App() {
 
   return (
     <>
-    <div style={{ display: "flex", justifyContent: 'center' }}>
-      <Header parallax={parallaxContainer}/>
-        
-        <Parallax ref={parallaxContainer} pages={3.65}>
-          <TitlePage/>
-          <AboutPage/>
-          <ExperiencePage/>
+      <div style={{ display: "flex", justifyContent: 'center' }}>
+        <Header parallax={parallaxContainer}/>
+          
+          <Parallax ref={parallaxContainer} pages={3.65}>
+            <TitlePage/>
+            <AboutPage/>
+            <ExperiencePage/>
 
-          <ParallaxLayer className="page4Layer" offset={2} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', backgroundColor: "black" }}>
-            <div className="page4">
-              <p style={{color: "white"}}> Put a concise and pretty list of skills. Maybe show experience level with each too. </p>
-            </div>
-          </ParallaxLayer>
+            <ParallaxLayer className="page4Layer" offset={2} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', backgroundColor: "black" }}>
+              <div className="page4">
+                <p style={{color: "white"}}> Put a concise and pretty list of skills. Maybe show experience level with each too. </p>
+              </div>
+            </ParallaxLayer>
 
-          <ParallaxLayer className="page5Layer" offset={2.95} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
-            <div className="page5">
-              <p style={{color: "white"}}> Contact info </p>
-            </div>
-          </ParallaxLayer>
-        </Parallax>
-    </div>
+            <ParallaxLayer className="page5Layer" offset={2.95} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
+              <div className="page5">
+                <p style={{color: "white"}}> Contact info </p>
+              </div>
+            </ParallaxLayer>
+          </Parallax>
+      </div>
     </>
   );
 }

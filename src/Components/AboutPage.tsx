@@ -15,7 +15,7 @@ export function AboutPage() {
                             My name is Logan Carter and I am a software developer that 
                             has a passion for solving complex problems and developing efficient 
                             software solutions. My range of experience has given me the ability 
-                            to quickly learn any tech stack and approach problems in new and 
+                            to quickly learn any tech stack quickly and approach problems in new and 
                             unique ways. 
                         </p>
                     </div>
