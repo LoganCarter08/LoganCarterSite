@@ -1,25 +1,42 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Parallax, ParallaxLayer, IParallaxLayer, IParallax } from '@react-spring/parallax'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Header } from './Components/Header';
+import { TitlePage } from './Components/TitlePage';
+import { AboutPage } from './Components/AboutPage';
+import { ExperiencePage } from './Components/ExperiencePage';
 
+// Since this is going to be a one page app I'll do everything here. Bad practice, but easy to fix later. 
 function App() {
+  const alignCenter = { display: 'flex', alignItems: 'center' }
+  const parallaxContainer = useRef<IParallax>(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={{ display: "flex", justifyContent: 'center' }}>
+      <Header parallax={parallaxContainer}/>
+        
+        <Parallax ref={parallaxContainer} pages={3.65}>
+          <TitlePage/>
+          <AboutPage/>
+          <ExperiencePage/>
+
+          <ParallaxLayer className="page4Layer" offset={2} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', backgroundColor: "black" }}>
+            <div className="page4">
+              <p style={{color: "white"}}> Put a concise and pretty list of skills. Maybe show experience level with each too. </p>
+            </div>
+          </ParallaxLayer>
+
+          <ParallaxLayer className="page5Layer" offset={2.95} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
+            <div className="page5">
+              <p style={{color: "white"}}> Contact info </p>
+            </div>
+          </ParallaxLayer>
+        </Parallax>
     </div>
+    </>
   );
 }
 
