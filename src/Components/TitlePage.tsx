@@ -1,5 +1,4 @@
 import { Parallax, ParallaxLayer, IParallaxLayer, IParallax } from '@react-spring/parallax'
-import Image from 'react-bootstrap/Image';
 
 export function TitlePage() {
     const alignCenter = { display: 'flex', alignItems: 'center' }
@@ -8,7 +7,7 @@ export function TitlePage() {
         <>
             <div className="page1">
                 <ParallaxLayer className="page1Name" offset={0} speed={0.1} style={{ ...alignCenter, justifyContent: 'center', zIndex:999 }}>
-                    <h1 className="myName" style={{fontSize: 80}}>Logan Carter</h1>          
+                    <h1 className="myName" style={{fontSize: 70}}>Logan Carter</h1>          
                 </ParallaxLayer>
 
                 {/* is there a way to get this to stick at the top? sticky field doesn't really work... */}
