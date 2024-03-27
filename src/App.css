@@ -28,7 +28,16 @@ span {
 
 table {
   border-collapse: collapse; 
+}
 
+.tableDiv {
+  max-width: 75%;
+}
+
+@media (max-width: 750px) {
+  .tableDiv {
+      max-width: 100%;
+  }
 }
 
 td {

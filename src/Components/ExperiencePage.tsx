@@ -6,12 +6,13 @@ export function ExperiencePage() {
     
     return (
         <>
-            <ParallaxLayer className="page3Layer" offset={1.45} speed={0.25} style={{ ...alignCenter, justifyContent: 'center', zIndex: 100 }}>
+            <ParallaxLayer className="page3Layer" offset={1.45} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', zIndex: 100 }}>
                     <div id="leidosExperience">
                     <Stack direction="vertical" gap={3} style={{...alignCenter, justifyContent: 'center'}}>
                         <h2 style={{color: "white"}}>Leidos</h2>
-                        <div style={{color: "white", maxWidth: "75%"}}>
+                        <div className="tableDiv" style={{color: "white"}}>
                             <table style={{textAlign: "center"}}>
+                                <tbody>
                                 <tr className="experienceTable"> 
                                     <th>Title</th>
                                     <th>Description</th>
@@ -50,6 +51,7 @@ export function ExperiencePage() {
                                         <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/c++Logo.svg'}/> C++,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/pythonLogo.png'}/> Python,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/afsimLogo.webp'}/> AFSIM</span>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </div>
                     </Stack>
