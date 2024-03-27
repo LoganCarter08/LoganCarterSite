@@ -60,11 +60,11 @@ export function ExperiencePage() {
 
             <ParallaxLayer offset={1.45} speed={0.5} style={{zIndex: 1}}>
                 {/*<Image src="/page3backgroundPic.png" fluid style={{height:"100%"}}/>*/}
-                <img src={process.env.PUBLIC_URL + '/page3backgroundPicBlack.png'} style={{height:"110%", ...alignCenter, justifyContent: 'center'}}/>
+                <img src={process.env.PUBLIC_URL + '/page3backgroundPicBlack.png'} style={{height:"110%", ...alignCenter, justifyContent: 'center', float:"right"}}/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1.45} speed={0.5} style={{zIndex: 1}}>
-                <img src={process.env.PUBLIC_URL + '/page3backgroundPicLightGray.png'} style={{height:"110%"}}/>
+            <ParallaxLayer offset={1.45} speed={0.25} style={{zIndex: 1}}>
+                <img src={process.env.PUBLIC_URL + '/page3backgroundPicLightGray.png'} style={{height:"110%", float:"right"}}/>
             </ParallaxLayer>
 
             <ParallaxLayer offset={1.45} speed={0.25} style={{zIndex: 1}}>
