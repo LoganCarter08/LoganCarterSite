@@ -27,7 +27,7 @@ span {
 }
 
 table {
-  border-collapse: collapse; 
+  border-collapse: collapse !important; 
 }
 
 .tableDiv {
@@ -37,6 +37,14 @@ table {
 @media (max-width: 750px) {
   .tableDiv {
       max-width: 100%;
+  } 
+  table {
+    border-collapse: separate;
+    border-spacing: 2px 0 !important;
+  }
+
+  td {
+    padding: 2px 0 !important;
   }
 }
 
@@ -201,4 +209,45 @@ th {
   display: flex;
   animation: grow 0.5s ease-in-out;
   -webkit-animation-fill-mode: forwards;
+}
+
+.leftArrow,.rightArrow {
+  width: 50px; 
+  height: 50px;
+  padding-left: 20px;
+  filter: invert(100%)
+}
+
+.leftArrow:hover, .rightArrow:hover {
+  animation: darkenHover ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.leftArrow:not(:hover), .rightArrow:not(:hover) {
+  animation: scaleDown ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes darkenHover {
+  0% {
+    filter: invert(100%)
+  }
+  100% {
+    filter: invert(50%)
+  }
+}
+
+@keyframes lightenHover {
+  0% {
+    filter: invert(50%)
+  }
+  100% {
+    filter: invert(100%)
+  }
+}
+
+.leftArrow {
+  transform: rotate(180deg);
 }

@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import { Parallax, ParallaxLayer, IParallaxLayer, IParallax } from '@react-spring/parallax'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from './Components/Header';
-import { TitlePage } from './Components/TitlePage';
-import { AboutPage } from './Components/AboutPage';
-import { ExperiencePage } from './Components/ExperiencePage';
+import { Header } from './Components/ParallaxLayers/Header';
+import { TitlePage } from './Components/ParallaxLayers/TitlePage';
+import { AboutPage } from './Components/ParallaxLayers/AboutPage';
+import { ExperiencePage } from './Components/ParallaxLayers/ExperiencePage';
 
 // Since this is going to be a one page app I'll do everything here. Bad practice, but easy to fix later. 
 function App() {
