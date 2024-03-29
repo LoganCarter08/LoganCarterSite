@@ -68,7 +68,13 @@ th {
     typing 4s steps(40, end)
 }
 
-/* The typing effect */
+@media (max-width: 750px) {
+  .myName {
+    animation: 
+      typing 2.5s steps(40, end)
+  }
+}
+
 @keyframes typing {
   from { width: 0% }
   to { width: 100% }
@@ -230,21 +236,23 @@ th {
   animation-fill-mode: forwards;
 }
 
-@keyframes darkenHover {
-  0% {
-    filter: invert(100%)
+@media (min-width: 750px) {
+  @keyframes darkenHover {
+    0% {
+      filter: invert(100%)
+    }
+    100% {
+      filter: invert(50%)
+    }
   }
-  100% {
-    filter: invert(50%)
-  }
-}
 
-@keyframes lightenHover {
-  0% {
-    filter: invert(50%)
-  }
-  100% {
-    filter: invert(100%)
+  @keyframes lightenHover {
+    0% {
+      filter: invert(50%)
+    }
+    100% {
+      filter: invert(100%)
+    }
   }
 }
 
