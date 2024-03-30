@@ -25,7 +25,8 @@ export function SigmaTEK({index}:{index:number}) {
                                     functionality to meet client needs.
                                 </td>
                                 <td>
-                                <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/csharpLogo.png'}/> C#,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/pascalLogo.png'}/> Pascal</span>
+                                <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/csharpLogo.png'}/> C#,</span> 
+                                <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/pascalLogo.png'}/> Pascal</span>
                                 </td>
                             </tr>
                             <tr className="experienceTable">
@@ -35,7 +36,7 @@ export function SigmaTEK({index}:{index:number}) {
                                     scripted Pascal directly on the customer's machines while on the phone with them. 
                                 </td>
                                 <td>
-                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/pascalLogo.png'}/> Pascal</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/pascalLogo.png'}/> Pascal</span>
                                 </td>
                             </tr>
                         </tbody>

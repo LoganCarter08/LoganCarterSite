@@ -22,18 +22,25 @@ export function Leidos({index}:{index:number}) {
                                     Defense controlled hardware and components. 
                                 </td>
                                 <td>
-                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logo192.png'}/> ReactJS,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/djangoLogo.png'}/> Django,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/sqliteLogo.png'}/> SQLite,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/threejsLogo.png'}/> Three.js,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/panda3dLogo.png'}/> Panda3D</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/logo192.png'}/> ReactJS,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/djangoLogo.png'}/> Django,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/sqliteLogo.png'}/> SQLite,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/threejsLogo.png'}/> Three.js,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/panda3dLogo.png'}/> Panda3D</span>
                                 </td>
                             </tr>
                             <tr className="experienceTable">
-                                <td>Backend Software Developer</td>
+                                <td>Lead Backend Software Developer</td>
                                 <td>
-                                    Solely built and managed a Django and Postgres backend while assisting the front end team with 
-                                    building a customer facing portal to allow DoD customers to have real time feedback 
+                                    Solely built and managed a Django and Postgres backend while also working on the front end team to 
+                                    build a customer facing portal to allow DoD customers to have real time feedback 
                                     and status on their missions, assets, funding, and staffing.
                                 </td>
                                 <td>
-                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/djangoLogo.png'}/> Django,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/postgresLogo.png'}/> Postgres</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/djangoLogo.png'}/> Django,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/postgresLogo.png'}/> Postgres,</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/htmlLogo.png'}/> HTML,</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/jsLogo.png'}/> Javascript</span>
                                 </td>
                             </tr>
                             <tr className="experienceTable" style={{backgroundColor: "#3E3E3E"}}>
@@ -44,7 +51,9 @@ export function Leidos({index}:{index:number}) {
                                     States military. 
                                 </td>
                                 <td>
-                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/c++Logo.svg'}/> C++,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/pythonLogo.png'}/> Python,</span> <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/afsimLogo.png'}/> AFSIM</span>
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/c++Logo.svg'}/> C++,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/pythonLogo.png'}/> Python,</span> 
+                                    <span><img className="inlineLogo" src={process.env.PUBLIC_URL + '/logos/afsimLogo.png'}/> AFSIM</span>
                                 </td>
                             </tr>
                         </tbody>

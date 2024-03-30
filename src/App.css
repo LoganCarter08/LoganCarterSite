@@ -231,7 +231,7 @@ th {
 }
 
 .leftArrow:not(:hover), .rightArrow:not(:hover) {
-  animation: scaleDown ease 1s;
+  animation: lightenHover ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
