@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LoganCarterSite/static/css/main.d1227be0.css",
-    "main.js": "/LoganCarterSite/static/js/main.0262146a.js",
+    "main.css": "/LoganCarterSite/static/css/main.748ec4dc.css",
+    "main.js": "/LoganCarterSite/static/js/main.a146dacc.js",
     "static/js/453.96cba20d.chunk.js": "/LoganCarterSite/static/js/453.96cba20d.chunk.js",
     "index.html": "/LoganCarterSite/index.html",
-    "main.d1227be0.css.map": "/LoganCarterSite/static/css/main.d1227be0.css.map",
-    "main.0262146a.js.map": "/LoganCarterSite/static/js/main.0262146a.js.map",
+    "main.748ec4dc.css.map": "/LoganCarterSite/static/css/main.748ec4dc.css.map",
+    "main.a146dacc.js.map": "/LoganCarterSite/static/js/main.a146dacc.js.map",
     "453.96cba20d.chunk.js.map": "/LoganCarterSite/static/js/453.96cba20d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1227be0.css",
-    "static/js/main.0262146a.js"
+    "static/css/main.748ec4dc.css",
+    "static/js/main.a146dacc.js"
   ]
 }
