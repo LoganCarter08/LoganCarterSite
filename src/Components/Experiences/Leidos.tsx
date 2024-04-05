@@ -7,12 +7,15 @@ export function Leidos({index}:{index:number}) {
         <div id={"job" + index + "_experience"} style={{position:"absolute"}}>
             <Stack direction="vertical" gap={3} style={{...alignCenter, justifyContent: 'center'}}>
                 <div className="tableDiv" style={{color: "white"}}>
-                    <p style={{...alignCenter, justifyContent: 'center', marginBottom: "-10px"}}>
-                        February 2021 - Current
-                    </p>
-
                     <table style={{textAlign: "center"}}>
                         <tbody>
+                            <tr> 
+                                <td></td>
+                                <td>
+                                    February 2021 - Current
+                                </td>
+                                <td></td>
+                            </tr>
                             <tr className="experienceTable"> 
                                 <th>Title</th>
                                 <th>Description</th>

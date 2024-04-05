@@ -34,7 +34,7 @@ table {
   max-width: 75%;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1050px) {
   .tableDiv {
       max-width: 100%;
   } 
@@ -48,9 +48,10 @@ table {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .tableDiv {
       max-width: 100%;
+      margin-top: 100px;
   } 
 
   .experienceTableHeader {
