@@ -4,9 +4,13 @@ export function SigmaTEK({index}:{index:number}) {
     const alignCenter = { display: 'flex', alignItems: 'center' }
     
     return (
-        <div id={"job" + index + "_experience"} className="hidden">
+        <div id={"job" + index + "_experience"} className="hidden" style={{position:"absolute"}}>
             <Stack direction="vertical" gap={3} style={{...alignCenter, justifyContent: 'center'}}>
                 <div className="tableDiv" style={{color: "white"}}>
+                    <p style={{...alignCenter, justifyContent: 'center', marginBottom: "-10px"}}>
+                        February 2019 - February 2021
+                    </p>
+
                     <table style={{textAlign: "center"}}>
                         <tbody>
                             <tr className="experienceTable"> 

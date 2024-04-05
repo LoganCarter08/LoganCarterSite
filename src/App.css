@@ -34,10 +34,31 @@ table {
   max-width: 75%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 930px) {
   .tableDiv {
       max-width: 100%;
   } 
+  table {
+    border-collapse: separate;
+    border-spacing: 2px 0 !important;
+  }
+
+  td {
+    padding: 2px 0 !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .tableDiv {
+      max-width: 100%;
+  } 
+
+  .experienceTableHeader {
+    position: absolute; 
+    top: 240px;
+    left: calc(50vw - 150px)
+  }
+
   table {
     border-collapse: separate;
     border-spacing: 2px 0 !important;
@@ -258,4 +279,76 @@ th {
 
 .leftArrow {
   transform: rotate(180deg);
+}
+
+.slideLeftOut {
+  animation: slideLeftOut ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slideLeftIn {
+  animation: slideLeftIn ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slideRightOut {
+  animation: slideRightOut ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slideRightIn {
+  animation: slideRightIn ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLeftOut {
+  0% {
+    transform: translateX(0vw);
+    opacity: 1;
+  } 
+  100% {
+    transform: translateX(-100vw);
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes slideLeftIn {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  } 
+  100% {
+    transform: translateX(0vw);
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightOut {
+  0% {
+    transform: translateX(0vw);
+    opacity: 1;
+  } 
+  100% {
+    transform: translateX(100vw);
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes slideRightIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  } 
+  100% {
+    transform: translateX(0vw);
+    display: block;
+    opacity: 1;
+  }
 }

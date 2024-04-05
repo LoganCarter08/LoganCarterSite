@@ -10,22 +10,31 @@ export function ExperiencePage() {
     const companyList = ["Leidos", "SigmaTEK"];
     let currentIndex = 0;
 
+    function changeClass(setToClass: string) {
+        let currentJobView = document.getElementById("job" + currentIndex.toString() + "_experience");
+        if (currentJobView) {
+            currentJobView.className = "";
+            currentJobView.classList.add(setToClass);
+        }
+    }
+
     // let's N companies here in case I want to add more later. 
     function moveToNextCompany() {
-        document.getElementById("job" + currentIndex.toString() + "_experience")?.classList.add("hidden");
+        changeClass("slideLeftOut");
 
         currentIndex = (currentIndex + 1) == companyList.length ? 0 : currentIndex + 1;
 
-        document.getElementById("job" + (currentIndex).toString() + "_experience")?.classList.remove("hidden");
+        changeClass("slideLeftIn");
         updateCompanyName();
     }
     
     function moveToPreviousCompany() {
-        document.getElementById("job" + currentIndex.toString() + "_experience")?.classList.add("hidden");
-
+        changeClass("slideRightOut");
+        
         currentIndex = (currentIndex - 1) < 0 ? companyList.length - 1 : currentIndex - 1;
 
-        document.getElementById("job" + (currentIndex).toString() + "_experience")?.classList.remove("hidden");
+        changeClass("slideRightIn");
+        
         updateCompanyName();
     }
 
@@ -40,15 +49,16 @@ export function ExperiencePage() {
         <>
             <ParallaxLayer className="page3Layer" offset={1.45} speed={0.5} style={{ ...alignCenter, justifyContent: 'center', zIndex: 100 }}>
                 <Stack direction="vertical" gap={3} style={{...alignCenter, justifyContent: 'center'}}>
-                    <Stack direction="horizontal" gap={5} style={{...alignCenter, justifyContent: 'center'}}>
+                    <Stack direction="horizontal"  gap={5} className="experienceTableHeader" style={{justifyContent: 'center', zIndex:999, paddingBottom: 200, marginTop: -200}}>
                             <img onClick={moveToPreviousCompany} className="leftArrow" src={process.env.PUBLIC_URL + '/rightArrow.svg'}/>
                             <h2 id="companyName" style={{color: "white"}}>{companyList[currentIndex]}</h2>
                             <img onClick={moveToNextCompany} className="rightArrow" src={process.env.PUBLIC_URL + '/rightArrow.svg'}/>
                     </Stack>
                     
-                    <Leidos index={0}/>
-                    <SigmaTEK index={1}/>
-                
+                    <Stack direction="horizontal" gap={5} style={{ justifyContent: 'center'}}>
+                        <Leidos index={0}/>
+                        <SigmaTEK index={1}/>
+                    </Stack>
                 </Stack>
             </ParallaxLayer>
 

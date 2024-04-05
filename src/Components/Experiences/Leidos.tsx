@@ -4,9 +4,13 @@ export function Leidos({index}:{index:number}) {
     const alignCenter = { display: 'flex', alignItems: 'center' }
 
     return (
-        <div id={"job" + index + "_experience"}>
+        <div id={"job" + index + "_experience"} style={{position:"absolute"}}>
             <Stack direction="vertical" gap={3} style={{...alignCenter, justifyContent: 'center'}}>
                 <div className="tableDiv" style={{color: "white"}}>
+                    <p style={{...alignCenter, justifyContent: 'center', marginBottom: "-10px"}}>
+                        February 2021 - Current
+                    </p>
+
                     <table style={{textAlign: "center"}}>
                         <tbody>
                             <tr className="experienceTable"> 
